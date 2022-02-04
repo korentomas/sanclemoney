@@ -1,5 +1,5 @@
 import pandas as pd
-import streamlit_app as st
+import streamlit as st
 from datetime import datetime
 import urllib.parse as up
 import psycopg2
