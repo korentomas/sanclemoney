@@ -1,18 +1,11 @@
 import pandas as pd
-import joblib
 import streamlit as st
-import regex as re
-import string
-from wordcloud import WordCloud
-import matplotlib.pyplot as plt
-import seaborn as sns
 from datetime import datetime
-import requests
 import urllib.parse as up
 import psycopg2
 
 #Título de la página
-st.title('chancle dineros')
+st.title('chancle dineros 💸💸')
 
 monto_original = 9834.50
 
