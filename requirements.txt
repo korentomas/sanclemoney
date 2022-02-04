@@ -1,0 +1,8 @@
+streamlit
+pandas
+regex
+sklearn
+wordcloud
+seaborn
+matplotlib
+psycopg2
