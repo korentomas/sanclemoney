@@ -4,18 +4,6 @@ from datetime import datetime
 import urllib.parse as up
 import psycopg2
 
-
-def histogram(data,path,color,title,xaxis,yaxis):
-    fig = px.histogram(data, x=path,color=color)
-    fig.update_layout(
-        title_text=title,
-        xaxis_title_text=xaxis, 
-        yaxis_title_text=yaxis, 
-        bargap=0.2, 
-        bargroupgap=0.1
-    )
-    fig.show()
-
 monto_original = 9834.50
 
 
@@ -207,7 +195,7 @@ def run():
     "description": "money over time.",
     "mark": "line",
     "encoding": {
-        "x": {"timeUnit": "hoursminutes", "field": "time", "type": "temporal"},
+        "x": {"timeUnit": "day hours minutes", "field": "time", "type": "temporal"},
         "y": {"field": "acc_amount", "type": "quantitative"},
         
         "color": {
